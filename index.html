@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wedding Invitation</title>
+
+<!-- FONT ESTETIK -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;600&family=Poppins&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- OPENING -->
+<div class="opening" id="opening">
+  <div class="opening-content">
+    <h1>The Wedding Of</h1>
+    <h2>Jesica & Maharjono</h2>
+    <button onclick="openInvitation()">Buka Undangan</button>
+  </div>
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+  <source src="Bobby Purba & Tabita Sipahutar - Sasada Ho (Lagu Batak Terbaru 2024) Official Music Video.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MAIN -->
+<div id="main" class="hidden">
+
+  <section class="section hero">
+    <div class="layer"></div>
+    <h1>Maharjono Naibaho, S.H.</h1>
+    <h1>Jesica Maldini Pakpahan, S.Pd.</h1>
+    <p>Dipersatukan dalam Kasih Tuhan</p>
+  </section>
+
+  <section class="section story">
+    <h2>Our Story</h2>
+    <p>Dari pertemuan sederhana hingga Tuhan mempersatukan kami.</p>
+     <p>Berawal dari konfirmasi pertemanan sosial media di facebook justru menjadi awal dari kisah luar biasa ini.
+
+Awalnya hanya sekadar teman berbagi cerita, perlahan rasa itu tumbuh, tanpa kami sadari sudah menjadi bagian penting dalam hidup masing-masing.
+
+Dengan keberanian dan doa, kami melakukan pertemuan 2 keluarga sederhana menjadi titik baru yang mengukuhkan keyakinan kami untuk bersama dalam suka maupun duka.
+
+Dengan penuh rasa syukur dan bahagia, kami siap mengikat janji suci, mempersembahkan kisah cinta ini untuk menjadi perjalanan seumur hidup.
+
+Kini, dengan penuh rasa syukur, kami mengundang Anda untuk menjadi saksi janji suci kami dalam ikatan pernikahan yang penuh kebahagiaan.</p>
+  </section>
+
+  <section class="section gallery">
+    <h2>Moment</h2>
+    <div class="slider">
+      <img src="WhatsApp Image 2026-02-06 at 12.00.30.jpeg">
+      <img src="WhatsApp Image 2026-02-06 at 12.00.31.jpeg">
+      <img src="WhatsApp Image 2026-02-06 at 12.00.32 (1).jpeg">
+    </div>
+  </section>
+
+  <section class="section event">
+    <h2>Save The Date</h2>
+    <h3>06 Juni 2026</h3>
+    <p id="countdown"></p>
+
+    <iframe src="https://www.google.com/maps?q=HKBP+Cirebon&output=embed"></iframe>
+  </section>
+
+  <section class="section rsvp">
+    <h2>Ucapan & Doa</h2>
+    <input id="name" placeholder="Nama">
+    <textarea id="message" placeholder="Ucapan"></textarea>
+    <button onclick="submitRSVP()">Kirim</button>
+    <div id="comments"></div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

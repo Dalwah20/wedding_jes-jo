@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background: #c9a57a;
+  color: #201e1c;
+  overflow-x: hidden;
+}
+
+/* FONT */
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 2px;
+}
+
+/* OPENING */
+.opening {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#ffc595, #fd915f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  color: rgb(77, 0, 0);
+  text-align: center;
+}
+
+.opening button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: rgb(31, 29, 22);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* MAIN */
+.hidden {
+  display: none;
+}
+
+/* SECTION */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO */
+.hero {
+  background: url('ulos.jpg') center/cover no-repeat fixed;
+  color: rgb(77, 0, 0);
+  position: relative;
+}
+
+.hero .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* STORY */
+.story {
+  background: #fdce8c;
+}
+
+/* GALERI */
+.gallery {
+  background: #4b4545;
+}
+
+.slider {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider img {
+  flex: 0 0 80%;
+  max-width: 300px;
+  border-radius: 20px;
+  scroll-snap-align: center;
+  object-fit: cover;
+}
+
+
+/* EVENT */
+.event {
+  background: #f3c590;
+}
+
+/* RSVP */
+.rsvp {
+  background: #4b4545;
+}
+
+input, textarea {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #585858;
+}
+
+button {
+  background: #8b5e3c;
+  color: rgb(255, 201, 201);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* MAP */
+iframe {
+  width: 90%;
+  height: 300px;
+  border-radius: 15px;
+  border: none;
+}
+
+.sparkle {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #ff3737, transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(1px);
+  animation: sparkleMove linear forwards;
+}
+
+@keyframes sparkleMove {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-250px) translateX(50px) scale(0);
+    opacity: 0;
+  }
+}
