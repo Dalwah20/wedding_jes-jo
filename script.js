@@ -90,3 +90,9 @@ function submitRSVP() {
   document.getElementById("name").value = "";
   document.getElementById("message").value = "";
 }
+/* COPY REKENING */
+function copyRek(id){
+var text=document.getElementById(id).innerText;
+navigator.clipboard.writeText(text);
+alert("Nomor rekening disalin!");
+}
