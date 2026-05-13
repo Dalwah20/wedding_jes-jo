@@ -119,25 +119,31 @@ h1, h2 {
 
 
 /* RSVP */
+/* RSVP */
 .rsvp{
-text-align:center;
-padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:60px;
 }
 
 .rsvp h2{
-color:#8c6b2f;
-margin-bottom:20px;
+    color:#8c6b2f;
+    margin-bottom:20px;
 }
 
 .rsvp button{
-padding:15px 30px;
-background:#b68d40;
-border:none;
-border-radius:30px;
-color:white;
-font-weight:bold;
-cursor:pointer;
-box-shadow:0 5px 15px rgba(182,141,64,0.4);
+    padding:15px 30px;
+    background:#b68d40;
+    border:none;
+    border-radius:30px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(182,141,64,0.4);
 }
 /* MAP */
 .section.event iframe {
